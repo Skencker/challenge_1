@@ -1,0 +1,242 @@
+
+
+/*=====
+STYLE GENERAL
+======*/
+@import url("https://fonts.googleapis.com/css2? family = Karla & display = swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 25% 800px 25%;
+  grid-template-rows: 200px auto 200px;
+  grid-template-areas:
+    ". . . "
+    ". body ."
+    " . . . ";
+}
+
+.container {
+  grid-area: body;
+  box-shadow: 5px 5px 20px grey;
+}
+
+/*===========
+Font
+=========*/
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+
+/*=====
+text color
+=======*/
+
+.blue_text {
+  color: hsl(179, 62%, 43%);
+}
+.green_text {
+  color: hsl(71, 73%, 54%);
+}
+.grey_text {
+  color: #d2d6df;
+}
+.white_text {
+  color: white;
+}
+
+/*=======
+background color
+=========*/
+
+.blue_bg {
+  background: hsl(179, 62%, 43%);
+}
+.green_bg {
+  background: hsl(71, 73%, 54%);
+}
+.blue_light_bg {
+  background: #4abebd;
+}
+.grey_bg {
+  background: #e6eff6;
+}
+.white_bg {
+  background: white;
+}
+
+/*========
+BUTTON
+========*/
+
+button {
+  height: 70px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.button {
+  text-align: center;
+}
+
+/*===========
+
+SPAN
+========*/
+
+span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/*=========
+li
+=========*/
+
+li {
+  list-style: none;
+  line-height: 25px;
+  font-size: 15px;
+}
+ul {
+  padding-left: 0px;
+}
+
+/*======
+GRID
+=======*/
+
+.container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 250px 300px;
+  grid-template-areas:
+    "header header"
+    "main aside";
+  border-radius: 20px;
+}
+header {
+  grid-area: header;
+  border-radius: 10px 10px 0px 0px;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+header p {
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+main {
+  grid-area: main;
+  border-radius: 0px 0px 0px 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main p {
+  line-height: 30px;
+}
+aside {
+  grid-area: aside;
+  border-radius: 0px 0px 10px 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*======
+RESPONSIVE
+=======*/
+
+@media screen and (max-width: 1300px) { /* je ne comprend pas si je met 375px cela ne fonctionne pas*/
+  body {
+    font-size: 12px;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 10% auto 10%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.8fr;
+    grid-template-areas:
+      "header "
+      "main "
+      "aside";
+    box-shadow: 5px 5px 20px lightgrey;
+  }
+  main {
+    padding: 30px;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  aside {
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  button {
+    height: 100px;
+    width: 85%;
+    font-size: 40px;
+    margin-top: 40px;
+  }
+}
+
+
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+*/
